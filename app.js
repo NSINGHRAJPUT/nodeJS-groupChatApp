@@ -15,7 +15,7 @@ app.post('/',(req,res,next)=>{
     <div align="center"><h1>Group Chat Application</h1>
     <form action="/" method="POST" onsubmit="document.getElementById('username').value=localStorage.getItem('username')">
     <input type="text" name="message">
-    <input type="text" name="username" id="username">
+    <input type="text" hidden name="username" id="username">
     <button type="submit">Send Message</button>
     </form><h3>ChatBox</h3>
     <div>${read}</div>
